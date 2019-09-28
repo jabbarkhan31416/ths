@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>vowel or consonant</title>
+    </head>
+    <body>
+        <script>
+            var vowOrCon = x => {
+                var vowArr = "aeiou".split("")
+                var conArr = "bcdfghjklmnpqrstvwxz".split("")
+                return(
+                    vowArr.includes(x)?"vowel":
+                    conArr.includes(x)?"consonant":
+                    "neither"
+                )
+            }
+            var test = x => console.log('input = "' + x + '", output = "' + vowOrCon(x) + '"')
+            test("r")
+            test("o")
+            test("u")
+            test("t")
+            test(6)
+        </script>
+      </body>
+</html>

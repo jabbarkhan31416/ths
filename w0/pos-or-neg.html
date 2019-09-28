@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <p id='output'></p>
+    <script>
+      var posOrNeg = x => 
+        x>0 ? " Positive" :
+        x<0 ? " Negative" :
+        " Zero"
+      var arr = [1,-2,3,-45,32,-3].map(posOrNeg)
+      document.getElementById("output").innerHTML = arr
+    </script>
+  </body>
+</html>

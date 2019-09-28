@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>leap year test</title>
+    </head>
+    <body>
+        <p id='output'></p>
+        <script>
+            var isLeap = x => !(x%4) ^ (x%100) ^ !(x%400)?true:false
+            var arr = [2002, 1994, 1000, 2000, 2016].map(isLeap)
+            document.getElementById("output").innerHTML = arr
+        </script>
+      </body>
+</html>

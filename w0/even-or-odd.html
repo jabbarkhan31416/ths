@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>even or odd</title>
+    </head>
+    <body>
+        <p id='output'></p>
+        <script>
+            var evenOrOdd = x => (x%2) ? " odd" : " even"
+            var arr = [33,0,-2,20-12,9,8,15,91].map(evenOrOdd)
+            document.getElementById("output").innerHTML = arr
+        </script>
+    </body>
+</html>

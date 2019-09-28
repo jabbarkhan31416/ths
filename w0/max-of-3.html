@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>max of 3</title>
+    </head>
+    <body>
+        <p id='output'></p>
+        <script>
+            var max3 = (x,y,z) =>
+                x>y
+                    ?x>z
+                        ?x
+                        :z
+                    :y>z
+                        ?y
+                        :z
+            var max = max3(-3,45,7)
+            document.getElementById("output").innerHTML = max
+        </script>
+      </body>
+</html>

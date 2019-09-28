@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>planet age</title>
+    </head>
+    <body>
+        <script>
+            var age = (second,planet) => {
+                var planetArray = [0.2408467, 0.61519726, 1.0, 1.8808158, 11.862615, 29.447498, 84.016846, ]
+                var planetName = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+                var years = planetArray[planet] * second / 31557600
+                return years + " "+  planetName[planet] + " years."
+            }
+            var test = (sec,pla) => console.log('input = "' + sec + '", output = "' + age(sec,pla) + '"')
+            test(1000000000,2)
+            test(121212121,4)
+            test(9999999909,0)
+        </script>
+      </body>
+</html>

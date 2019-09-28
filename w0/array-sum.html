@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <p id='output'></p>
+    <script>
+      var arraySum = a => (
+        a.reduce((x,ac) => x+ac, 0)
+      )
+      var ans = arraySum([1,2,3,5,7,23])
+      document.getElementById("output").innerHTML = ans
+    </script>
+  </body>
+</html>

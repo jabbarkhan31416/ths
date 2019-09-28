@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>max in array</title>
+    </head>
+    <body>
+        <p id='output'></p>
+        <script>
+            var maxInArray = x => x.reduce(((n,a) => n>a?n:a),-1/0)
+            var num = maxInArray([-33,90,2,-20-12,-5,-8,15,-91])
+            document.getElementById("output").innerHTML = num
+        </script>
+      </body>
+</html>

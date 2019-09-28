@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <p id='output'></p>
+    <script>
+      var fizzBuzz = x => 
+        ! (x%3)
+          ? !(x%5)
+            ? "<br/> FizzBuzz"
+            : "<br/> Fizz"
+          : !(x%5)
+            ? "<br/> Buzz"
+            : "<br/> "+x
+      var arr = Array(100).fill().map((_,i) => i+1).map(fizzBuzz)
+      document.getElementById("output").innerHTML = arr
+    </script>
+  </body>
+</html>
