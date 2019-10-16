@@ -1,0 +1,3 @@
+1. 
+
+2. f001 will return object {bar: "hello"} and f002 will return undefined. this is because javascript will insert
