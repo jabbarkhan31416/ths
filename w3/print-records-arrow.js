@@ -1,19 +1,15 @@
 
 
-const printRecords = function(recordIds) {
-    return studentRecords
-        .filter(function(n){return recordIds.indexOf(n.id) !== -1})
-        .sort(function(a,b){
-            return (
+const printRecords = recordIds => (
+    studentRecords
+        .filter(n => recordIds.indexOf(n.id) !== -1)
+        .sort((a,b) => (
                 a.name>b.name ? 1 :
                 a.name<b.name ? -1 :
                 0
-            )
-        })
-        .forEach(function(n){
-            console.log(`${n.name} (${n.id}): ${n.paid ? "" : "Not"} Paid`,"\n")
-        })
-}
+        ))
+        .forEach(n => console.log(`${n.name} (${n.id}): ${n.paid ? "" : "Not"} Paid`,"\n"))
+)
 
 // ********************************
 
