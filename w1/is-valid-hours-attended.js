@@ -1,7 +1,7 @@
 
 
 var isValidName = name => 
-    isString(name) && name.split("").map(z => z.trim()).filter(z => z!=="").length > 2 ? true :
+    typeof name === "string" && name.split("").map(z => z.trim()).filter(z => z!=="").length > 2 ? true :
     false
 
 var hoursAttended = (att,len) => {
