@@ -1,3 +1,5 @@
 window.addEventListener("DOMContentLoaded",e=>{
-    console.log("cat")
+    const button = document.getElementsByName("button")
+    const div = document.getElementsByName("div")
+    
 })
