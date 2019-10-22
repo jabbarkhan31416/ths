@@ -42,6 +42,7 @@ window.addEventListener("DOMContentLoaded", e=>{
             ctx.fill()
         }
         ctx.beginPath()
+        ctx.fillStyle = "red"
         ctx.arc(size/2, size/2, size/36, 0, 2*Math.PI)
         ctx.fill()
     }
