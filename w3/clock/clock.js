@@ -30,6 +30,16 @@ window.addEventListener("DOMContentLoaded", e=>{
         drawHand(hour, 0.5, 2, "black")
         drawHand(minute, 0.8, 1.6, "brown")
         drawHand(second, 1, 1, "red")
+        for(let i = 0; i < 4; i = i+1){
+            ctx.beginPath()
+            ctx.arc(
+                size/2 + size/2*0.9*Math.sin(i*Math.PI/2),
+                size/2 + size/2*0.9*Math.cos(i*Math.PI/2),
+                size/42,
+                0,
+                2*Math.PI
+            )
+        }
         ctx.beginPath()
         ctx.arc(size/2, size/2, size/36, 0, 2*Math.PI)
         ctx.fill()
