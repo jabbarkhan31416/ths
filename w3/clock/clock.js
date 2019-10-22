@@ -13,10 +13,11 @@ window.addEventListener("DOMContentLoaded", e=>{
         const hour = date.getHours()%12*5
         const minute = date.getMinutes()
         const second = date.getSeconds()
-        const drawHand = (angle,length)=>{
+        const drawHand = (angle,length,thickness,colour)=>{
             length1 = length*size/2*0.8
             angle1 = Math.floor(angle)*Math.PI/30
-            ctx.lineWidth = size/100
+            ctx.lineWidth = thickness*size/100
+            ctx.strokeStyle = colour
             ctx.lineCap = "round"
             ctx.beginPath()
             ctx.moveTo(size/2, size/2)
@@ -26,9 +27,9 @@ window.addEventListener("DOMContentLoaded", e=>{
             )
             ctx.stroke()
         }
-        drawHand(hour, 0.5)
-        drawHand(minute, 0.8)
-        drawHand(second, 1)
+        drawHand(hour, 0.5, 2, "black")
+        drawHand(minute, 0.8, 1.6, "brown")
+        drawHand(second, 1, 1, "red")
         ctx.beginPath()
         ctx.arc(size/2, size/2, size/36, 0, 2*Math.PI)
         ctx.fill()
