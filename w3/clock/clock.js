@@ -39,6 +39,7 @@ window.addEventListener("DOMContentLoaded", e=>{
                 0,
                 2*Math.PI
             )
+            fill()
         }
         ctx.beginPath()
         ctx.arc(size/2, size/2, size/36, 0, 2*Math.PI)
