@@ -2,4 +2,11 @@ table {
     height: 560px;
     width: 560px;
     border: 1px solid;
+    border-collapse: collapse;
+}
+#top {
+    height: 50px;
+}
+#top td {
+    border: 1px solid;
 }
