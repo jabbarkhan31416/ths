@@ -1,0 +1,10 @@
+<%- include partials/header.ejs %>
+<h1>Products</h1>
+<form method="post" action="/products">
+    <input type="text" name="product" placeholder="Enter name:">
+    <input type="text" name="description" placeholder="Enter description:">
+    <input type="text" name="votes" placeholder="Enter votes:">
+    <input type="submit" value="submit">
+</form>
+
+<%- include partials/footer.ejs %>

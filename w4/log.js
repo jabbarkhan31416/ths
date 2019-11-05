@@ -8,6 +8,7 @@ const max2Power = n=>{
     }
     return [exp,pow]
 }
+
 const log0 = (n,it)=>{
     if(n <= 0) throw Error("expected a positive number")
     else if(n < 1) return -log0(1/n)
@@ -15,6 +16,7 @@ const log0 = (n,it)=>{
     else{
         const [exp,pow] = max2Power(n)
         const mant = n/pow
-        
+        console.log(exp, pow, mant)
+        return
     }
 }

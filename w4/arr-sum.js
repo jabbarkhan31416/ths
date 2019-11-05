@@ -1,0 +1,1 @@
+const arrSum = arr => arr.reduce((acc,elem) => acc+elem)
