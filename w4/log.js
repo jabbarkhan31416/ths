@@ -16,7 +16,8 @@ const log0 = (n,it)=>{
     else{
         const [exp,pow] = max2Power(n)
         const mant = n/pow
-        console.log(exp, pow, mant)
-        return
+        return it <= 0 ? mant : exp + log0(mant**1000, it-1)/1000
     }
 }
+
+const log = (n,b=2) => log0(n,iterations) / log0(b,iterations)

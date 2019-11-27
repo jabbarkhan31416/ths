@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contacts App</title>
+    </head>
+    <body>
+        <h1>CRUD app with mongoDB</h1>
+        <h2>Contacts App</h2>
+        <form action="/" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="mobile" placeholder="Mobile" required>
+            <input type="submit" value="Submit">
+        </form>
+        <h3>All Contacts</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%data.forEach(contact=>{%>
+                    <tr>
+                        <td><%=contact.name%></td>
+                        <td><%=contact.email%></td>
+                        <td><%=contact.mobile%></td>
+                    </tr>
+                <%})%>
+            </tbody>
+        </table>
+    </body>
+</html>
